@@ -29,7 +29,7 @@ export default class SingleRoom extends Component {
         <div className="error">
           <h3> no such room could be found...</h3>
           <Link to="/rooms" className="btn-primary">
-            back to rooms
+            back to properties
           </Link>
         </div>
       );
@@ -53,7 +53,7 @@ export default class SingleRoom extends Component {
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`${name} room`}>
             <Link to="/rooms" className="btn-primary">
-              back to rooms
+              back to properties
             </Link>
           </Banner>
         </StyledHero>
@@ -77,7 +77,7 @@ export default class SingleRoom extends Component {
                 {capacity > 1 ? `${capacity} people` : `${capacity} person`}
               </h6>
               <h6>{pets ? "pets allowed" : "no pets allowed"}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
+              <h6>{breakfast? "swimming Pool available": " No swimming Pool"}</h6>
             </article>
           </div>
         </section>
